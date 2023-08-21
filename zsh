@@ -1,4 +1,9 @@
 # source this file in your .zshrc (prob works in bash as well)
 # source $HOME/.config/scripts/zsh
 #
-alias dn=$HOME/.config/scripts/dailynote.sh
+#
+
+K_SCRIPTS_LOCATION=$HOME/.config/scripts
+
+alias dn=$K_SCRIPTS_LOCATION/dailynote.sh
+alias ff="$LOCATION/fastfile/FastFile.sh"
