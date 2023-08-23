@@ -6,4 +6,4 @@
 K_SCRIPTS_LOCATION=$HOME/.config/scripts
 
 alias dn=$K_SCRIPTS_LOCATION/dailynote.sh
-alias ff="$LOCATION/fastfile/FastFile.sh"
+alias ff=$K_SCRIPTS_LOCATION/fastfile/FastFile.sh
