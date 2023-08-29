@@ -10,7 +10,7 @@ print_current(){
     array_current=( $( /bin/ls -a -I . -I .. . ) )
 
     x_pos=30
-    y_pos=0
+    y_pos=10
     length="${#array_current[@]}"
 
     for i in {1..$length}
@@ -32,7 +32,7 @@ print_current(){
 print_prev(){
     array_prev=( $( /bin/ls -a -I . -I .. .. ) )
     x_pos=0
-    y_pos=0
+    y_pos=10
     length="${#array_prev[@]}"
 
     for i in {1..$length}
@@ -47,7 +47,7 @@ print_next(){
     array_next=( $(ls -a -I . -I .. $array_current[$current_high]))
 
     x_pos=100
-    y_pos=0
+    y_pos=10
 
     for i in {1..${#array_next[@]}}
     do
@@ -63,6 +63,14 @@ go_next(){
     current_high=1
 }
 
+exit_program(){
+    x_pos=0
+    y_pos=0
+    tput cup $y_pos $x_pos
+    tput init
+    pwd
+}
+
 
 while [ true ]
 do
@@ -73,9 +81,10 @@ do
 
     #print debug info
     x_pos=0
-    y_pos=30
+    y_pos=0
     tput cup $y_pos $x_pos
-    echo $array_next
+    #echo $array_next
+    pwd
 
     read -k1 -s keypress
 
@@ -99,8 +108,9 @@ do
         go_next
     fi
 
-    if [ $keypress = "o" ]
+    if [ $keypress = "q" ]
     then
-        ls
+        exit_program
+        break
     fi
 done
