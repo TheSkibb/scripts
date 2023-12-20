@@ -6,17 +6,17 @@ function run(){
     if [ $# -lt 3 ]; then
         echo "no run environment specified"
     else
-        echo "running $file with $3"
+        echo "running $file with $3 \n"
         $3 $file
     fi
 }
 
 function edit_file(){
-    $editor /tmp/kladd-$1
+    $editor $file
 }
 
-if [ $# -gt 2 ] && [ $2 = "" ]; then
+if [ $# -gt 2 ] && [ $2 = "run" ]; then
     run $1 $2 $3
 else
-    edit_file $1
+    edit_file
 fi
