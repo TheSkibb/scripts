@@ -5,7 +5,8 @@
 
 K_SCRIPTS_LOCATION=$HOME/.config/scripts
 
-alias dn=$K_SCRIPTS_LOCATION/dailynote.sh
+alias dn="$K_SCRIPTS_LOCATION/dailynote.sh daily"
+alias wn="$K_SCRIPTS_LOCATION/dailynote.sh weekly"
 alias todo=$K_SCRIPTS_LOCATION/todo.sh
 alias fvim=$K_SCRIPTS_LOCATION/fvim.sh
 alias ff='cd "$(dirname "$(fzf)")"'
