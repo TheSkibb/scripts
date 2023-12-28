@@ -20,6 +20,11 @@ how to sketch a new file:
 kladd <name-of-sketch>
 ~~~
 
+example:
+~~~bash
+kladd 1
+~~~
+
 how to run a sketch
 ~~~bash
 kladd <name-of-sketch> run <program-to-run-sketch>
