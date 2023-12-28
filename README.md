@@ -50,9 +50,17 @@ To change editor, change the $editor environment variable in the script
 
 ## dn - Daily Note
 
-Opens a markdown file name after the current date (same format as [obsidians](https://obsidian.md/) daily notes.
+~~~bash
+dn
+~~~
+Opens a markdown file for daily note.
 
-To change to the location of where the notes open change the $NOTE and $DAILY variables.
+~~~bash
+wn
+~~~
+Opens a markdown file for weekly note.
+
+To change to the location of where the notes open change the $NOTE $DAILY and $WEEKLY variables.
 
 $NOTE is the directory of all your notes. The dn script will cd to this directory so all files in this directory can be edited.
 $DAILY is the directory where you want the daily notes to be.
