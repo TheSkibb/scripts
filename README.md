@@ -21,8 +21,13 @@ kladd <name-of-sketch>
 ~~~
 
 how to run a sketch
-~~~
+~~~bash
 kladd <name-of-sketch> run <program-to-run-sketch>
+~~~
+
+how to list all sketches
+~~~bash
+kladd list
 ~~~
 
 example:

@@ -17,6 +17,8 @@ function edit_file(){
 
 if [ $# -gt 2 ] && [ $2 = "run" ]; then
     run $1 $2 $3
+elif [ $# -gt 0 ] && [ $1 = "list" ]; then
+    ls /tmp/kladd-*
 else
     edit_file
 fi
