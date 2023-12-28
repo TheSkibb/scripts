@@ -60,6 +60,8 @@ wn
 ~~~
 Opens a markdown file for weekly note.
 
+To change the date and week format of the notes change the $DAILY_FORMAT and $WEEKLY_FORMAT variables.
+
 To change to the location of where the notes open change the $NOTE $DAILY and $WEEKLY variables.
 
 $NOTE is the directory of all your notes. The dn script will cd to this directory so all files in this directory can be edited.
