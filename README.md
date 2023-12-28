@@ -25,11 +25,6 @@ how to run a sketch
 kladd <name-of-sketch> run <program-to-run-sketch>
 ~~~
 
-how to list all sketches
-~~~bash
-kladd list
-~~~
-
 example:
 ~~~bash
 kladd 1.py
@@ -37,6 +32,11 @@ kladd 1.py
 
 ~~~bash
 kladd 1.py run python3
+~~~
+
+how to list all sketches
+~~~bash
+kladd list
 ~~~
 
 Kladd requires no dependencies.
