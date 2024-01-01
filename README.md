@@ -92,3 +92,5 @@ Most of the other scripts are referenced externally on my machine.
     - lock with wallpaper.
 - batteryChecker
     - checks how much batteru is left.
+- newTask
+    - script to create tasks in neovim
