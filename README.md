@@ -9,7 +9,7 @@ source <location of repo>/zsh
 
 to your bashrc or zshrc
 
-# The script included
+# The scripts
 
 ## Kladd
 
