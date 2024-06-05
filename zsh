@@ -11,3 +11,4 @@ alias todo=$K_SCRIPTS_LOCATION/todo.sh
 alias fvim=$K_SCRIPTS_LOCATION/fvim.sh
 alias ff='cd "$(dirname "$(fzf)")"'
 alias kladd=$K_SCRIPTS_LOCATION/kladd.sh
+alias load-nvm='source $K_SCRIPTS_LOCATION/load-nvm.sh'
