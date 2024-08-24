@@ -7,7 +7,7 @@ WEEKLY_DIR=weeklyNotes
 DAILY_FORMAT='+%Y-%m-%d'
 WEEKLY_FORMAT='+%Y-W%W'
 
-if [[ -z $EDITOR ]] then
+if [[ -z $EDITOR ]]; then
 	editor=$EDITOR
 else
 	editor=vim
