@@ -1,5 +1,11 @@
 #!/usr/bin/zsh
-editor=/home/kristian/Programs/nvim-linux64/bin/nvim
+
+if [[ -z $EDITOR ]] then
+	editor=$EDITOR
+else
+	editor=vim
+fi
+
 file=/tmp/kladd-$1
 
 function run(){
