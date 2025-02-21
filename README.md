@@ -82,6 +82,16 @@ fvim is lets you edit the file you choose
 
 [fzf](https://github.com/junegunn/fzf) is required.
 
+## gd - Git Diff (diffinator)
+
+pipes git diff into fzf with a preview of the diff in question
+
+when selecting a diff it will run git diff for that file, so you can inspect the whole thing
+
+mapped to *gd*
+
+[fzf](https://github.com/junegunn/fzf) and git is required.
+
 ## Other
 
 Most of the other scripts are referenced externally on my machine.
