@@ -48,6 +48,14 @@ Kladd requires no dependencies.
 Default editor is neovim from a binary file (because that is what i run)
 To change editor, change the $editor environment variable in the script
 
+## podmaninator - fuzzy selection of podman containers
+
+lets you fuzzy select from podman containers, starts the container and a shell
+
+~~~
+pd
+~~~
+
 ## dn - Daily Note
 
 ~~~bash

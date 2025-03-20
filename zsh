@@ -14,3 +14,5 @@ alias ff='cd "$(dirname "$(fzf)")"'
 alias fopen='xdg-open "$(fzf)"'
 alias kladd=$K_SCRIPTS_LOCATION/kladd.sh
 alias load-nvm='source $K_SCRIPTS_LOCATION/load-nvm.sh'
+alias gd=$K_SCRIPTS_LOCATION/diffinator.sh
+alias pd=$K_SCRIPTS_LOCATION/podmaninator.sh
