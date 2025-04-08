@@ -5,8 +5,8 @@ selection=$(podman ps -a --format "{{.ID}} {{.Names}} {{.Image}}" | fzf)
 if [[ -n "$selection" ]]; then
 
     id=$(echo $selection | cut -c -12)
-    command=$(podman ps --filter id=$id --format "{{.Command}}")
-    echo $command
+    command=$(podman ps -a --filter id=$id --format "{{.Command}}")
+    #echo "starting $id with $command"
     podman start $id && podman exec -it $id $command
 
 else
