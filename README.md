@@ -1,13 +1,14 @@
 # Scripts
 
-This is a collection of different scripts to improve my terminal workflow
+This is a collection of scripts to improve my terminal workflow.
 
 To install, clone the repo, and add
 ~~~bash
 source <location of repo>/zsh
 ~~~
 
-to your bashrc or zshrc
+to your bashrc or zshrc.
+#!(all scripts run as #!/bin/bash)
 
 # The scripts
 
@@ -50,7 +51,7 @@ To change editor, change the $editor environment variable in the script
 
 ## podmaninator - fuzzy selection of podman containers
 
-lets you fuzzy select from podman containers, starts the container and a shell
+lets you fuzzy select from podman containers, starts the container its command 
 
 ~~~
 pd
