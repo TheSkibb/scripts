@@ -1,3 +1,5 @@
+#/bin/bash
+
 NOTE=$HOME/Documents/Obsidian\ "Vault"/
 cd "$NOTE"
 

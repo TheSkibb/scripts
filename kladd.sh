@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/bash
 
 if [[ -z $EDITOR ]] then
 	editor=$EDITOR

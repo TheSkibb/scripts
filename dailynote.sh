@@ -1,3 +1,4 @@
+#!/bin/bash
 # script to open the daily note in the obsidian vault
 
 NOTE=$HOME/Notes
