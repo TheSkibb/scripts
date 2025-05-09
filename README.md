@@ -57,6 +57,17 @@ lets you fuzzy select from podman containers, starts the container its command
 pd
 ~~~
 
+## toolbox
+
+lets you quickly search your toolbox directory and open
+
+requirements: bat and nvim
+*alternatively you can change the preview and editor variables to some other programs you prefer*
+
+~~~
+tb
+~~~
+
 ## dn - Daily Note
 
 ~~~bash
