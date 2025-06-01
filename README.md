@@ -111,16 +111,3 @@ when selecting a diff it will run git diff for that file, so you can inspect the
 mapped to *gd*
 
 [fzf](https://github.com/junegunn/fzf) and git is required.
-
-## Other
-
-Most of the other scripts are referenced externally on my machine.
-
-- notifySuspend
-    - send a notification that the system will suspend soon.
-- i3lock
-    - lock with wallpaper.
-- batteryChecker
-    - checks how much batteru is left.
-- newTask
-    - script to create tasks in neovim
