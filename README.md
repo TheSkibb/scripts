@@ -68,6 +68,17 @@ requirements: bat and nvim
 tb
 ~~~
 
+**examples** of toolbox notes can be found at https://github.com/TheSkibb/toolbox
+
+you can also quickly add new tools by adding the argument n
+
+~~~bash
+tb n
+~~~
+
+First you will be promted for a file name. All spaces will be replaced with dashes, and a .md extension will be added.
+Then that filename will be opened with your editor (nvim by default)
+
 ## dn - Daily Note
 
 ~~~bash
@@ -111,3 +122,16 @@ when selecting a diff it will run git diff for that file, so you can inspect the
 mapped to *gd*
 
 [fzf](https://github.com/junegunn/fzf) and git is required.
+
+## Other
+
+Most of the other scripts are referenced externally on my machine.
+
+- notifySuspend
+    - send a notification that the system will suspend soon.
+- i3lock
+    - lock with wallpaper.
+- batteryChecker
+    - checks how much batteru is left.
+- newTask
+    - script to create tasks in neovim
