@@ -20,7 +20,7 @@ function newTool(){
     read -p "new tool filename: " user_input
 
     #replace all spaces with dashes, and add .md
-    filename="${user_input// /-}.md"
+    local filename="${user_input// /-}.md"
 
     $editor $filename
 
@@ -28,7 +28,7 @@ function newTool(){
 }
 
 function selectTool(){
-    choice=$(fzf --preview "$preview {}")
+    local choice=$(fzf --preview "$preview {}")
 
     if [[ -n "$choice" ]]; then
         $editor $choice

@@ -17,10 +17,10 @@ fi
 cd "$NOTE"
 
 if [ $1 = "daily" ]; then
-    date=$(date $DAILY_FORMAT)
+    local date=$(date $DAILY_FORMAT)
     $editor "$DAILY_DIR"/"$date".md
 elif [ $1 = "weekly" ]; then
-    date=$(date $WEEKLY_FORMAT)
+    local date=$(date $WEEKLY_FORMAT)
     $editor "$WEEKLY_DIR"/"$date".md
 fi
 
