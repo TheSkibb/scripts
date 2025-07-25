@@ -123,6 +123,16 @@ mapped to *gd*
 
 [fzf](https://github.com/junegunn/fzf) and git is required.
 
+## cht - search cheat.sh
+
+bat is required, or change the *display_program* variable
+
+~~~
+cht
+~~~
+
+then input the command/program/concept to search for
+
 ## Other
 
 Most of the other scripts are referenced externally on my machine.
