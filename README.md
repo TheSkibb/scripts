@@ -8,7 +8,7 @@ source <location of repo>/zsh
 ~~~
 
 to your bashrc or zshrc.
-#!(all scripts run as #!/bin/bash)
+(all scripts run as bash)
 
 # The scripts
 
