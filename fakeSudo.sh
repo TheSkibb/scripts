@@ -1,14 +1,29 @@
 #! /usr/bin/env bash
 # sudo which will always result in wrong password
 
-read -s -p "[sudo] password for ${USER}: " throwaway
-echo
-sleep 1
-echo "Sorry, try again"
-read -s -p "[sudo] password for ${USER}: " throwaway
-echo
-sleep 1
-echo "Sorry, try again"
-read -s -p "[sudo] password for ${USER}: " throwaway
-echo
-echo "sudo: 3 incorrect password attempts"
+if [[ $1 = "" ]]; then
+    cat << EOF
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+EOF
+else
+    read -s -p "[sudo] password for ${USER}: " throwaway
+    echo
+    sleep 1
+    echo "Sorry, try again"
+    read -s -p "[sudo] password for ${USER}: " throwaway
+    echo
+    sleep 1
+    echo "Sorry, try again"
+    read -s -p "[sudo] password for ${USER}: " throwaway
+    echo
+    echo "sudo: 3 incorrect password attempts"
+fi
