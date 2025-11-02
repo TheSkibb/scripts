@@ -18,3 +18,4 @@ alias gd=$K_SCRIPTS_LOCATION/diffinator.sh
 alias pd=$K_SCRIPTS_LOCATION/podmaninator.sh
 alias tb=$K_SCRIPTS_LOCATION/toolbox.sh
 alias cht=$K_SCRIPTS_LOCATION/cheat.sh
+alias sudo=$K_SCRIPTS_LOCATION/fakeSudo.sh
