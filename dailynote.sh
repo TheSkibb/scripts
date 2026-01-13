@@ -1,7 +1,7 @@
 #!/bin/bash
 # script to open the daily note in the obsidian vault
 
-NOTE=$HOME/Notes
+NOTE=$HOME/uio-notes-sem4/
 DAILY_DIR=dailyNotes
 WEEKLY_DIR=weeklyNotes
 
@@ -11,7 +11,7 @@ WEEKLY_FORMAT='+%Y-W%W'
 if [[ -z $EDITOR ]]; then
 	editor=$EDITOR
 else
-	editor=vim
+	editor=nvim
 fi
 
 cd "$NOTE"

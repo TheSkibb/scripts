@@ -133,6 +133,13 @@ cht
 
 then input the command/program/concept to search for
 
+# fakeSudo - sudo which always fails
+
+To activate this uncomment the sudo alias in the optional section.
+The fake sudo will remaps "sudo" to a script which will always fail.
+
+It can be bypassed by using absolute path for sudo.
+
 ## Other
 
 Most of the other scripts are referenced externally on my machine.

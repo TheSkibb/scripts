@@ -3,7 +3,7 @@
 if [[ -z $EDITOR ]] then
 	editor=$EDITOR
 else
-	editor=vim
+	editor=nvim
 fi
 
 file=/tmp/kladd-$1
